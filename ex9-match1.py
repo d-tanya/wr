@@ -5,9 +5,9 @@ print("enter pattern:")
 pat = input()
 pat=pat.split()
 count = 0
-for i in range(len(t)):
-    for j in range(len(pat)):
-        if pat[j]==t[i]:
+for i in t:
+    for j in pat:
+        if j==i:
             count +=1
             continue
         else:
