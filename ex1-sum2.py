@@ -6,7 +6,9 @@ s = s.split()
 try:
     for i in range(len(s)):
         s[i] = float(s[i])
-except ValueError:
+    sm = sum(s)
+    print ('summa=',sm)
+except (ValueError,TypeError):
     print("array should be numeric")
-sm = sum(s)
-print ('summa=',sm)
+
+

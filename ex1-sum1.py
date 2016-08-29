@@ -6,8 +6,7 @@ a = s.split()
 summa = 0
 try: 
     for elem in a:
-        elem = float(elem)
-        summa += elem
+        summa += float(elem)
 except ValueError:
-	print("All elements in array should be numbers. This element is not a number:",elem,"")
-print('summa=',summa)
+    print("All elements in array should be numbers. This element is not a number:",elem,"")
+print("summa=",summa)
