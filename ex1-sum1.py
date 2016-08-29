@@ -5,9 +5,9 @@ s = input()
 a = s.split()
 summa = 0
 try: 
-    floats = [float(elem) for elem in a]
-    for i in floats:
-        summa += i
+    for elem in a:
+        elem = float(elem)
+        summa += elem
 except ValueError:
-	print("All elements in array should be numbers.")
+	print("All elements in array should be numbers. This element is not a number:",elem,"")
 print('summa=',summa)
