@@ -6,7 +6,7 @@ a = a.split()
 try:
     for i in range(len(a)):
         a[i] = float(a[i])
-
+        
     def sort(a=[]):
         beforepart = []
         samepart = []
@@ -15,16 +15,16 @@ try:
             return a
         else:
             startelem = a[0]
-            for i in a:
-                if i < startelem:
-                    beforepart.append(i)
-                elif i == startelem:
-                    samepart.append(i)
-                elif i > startelem:
-                    afterpart.append(i)
-            arr = sort(beforepart)+samepart+sort(afterpart)
-            return arr
-    
+        for i in a:
+            if i < startelem:
+                beforepart.append(i)
+            elif i == startelem:
+                samepart.append(i)
+            elif i > startelem:
+                afterpart.append(i)
+        arr = sort(beforepart)+samepart+sort(afterpart)
+        return arr
+
     k = sort(a)
     print(k)
 except ValueError:
