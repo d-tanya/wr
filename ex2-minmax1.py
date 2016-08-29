@@ -6,16 +6,15 @@ a = a.split()
 try:
     mn = float(a[0])
     mx = float(a[0])
-    for i in range(len(a)):
-        if float(a[i])< mn:
-            mn = float(a[i])
+    for i in a:
+        if float(i)< mn:
+            mn = float(i)
     print('min=',mn)
-    for i in range(len(a)):
-        if float(a[i])>mx:
-            mx = float(a[i])
+    for j in a:
+        if float(j)>mx:
+            mx = float(j)
     print('max=',mx)
 except ValueError:
-    print("array should be numeric")
+    print("array should be numeric. this element")
 except IndexError:
     print("you did't type any array element")
-
